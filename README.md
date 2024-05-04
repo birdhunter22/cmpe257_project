@@ -18,6 +18,7 @@ This project aims to develop a predictive model for wildfire occurrences in the 
 
 ### Approach
 - **Binary Classification:** Our initial model version utilizes 5-6 significant weather parameters over one county. We are working towards a multi-classification model to provide nuanced probability scores for wildfire occurrences.
+- **Regression:** Predict severity of the wildfire. Severity = 0 for negative samples (not wildfire).
 
 ### Model Selection and Insights
 Our exploration of machine learning models for predicting wildfire occurrences includes:
@@ -31,6 +32,8 @@ Our exploration of machine learning models for predicting wildfire occurrences i
 - **AdaBoost Classifier:** Demonstrated a significantly higher recall, indicating better performance in catching true positives. It also had a higher F1 Score, suggesting a better balance between precision and recall, which is crucial for our imbalanced dataset.
 
 - **XGBClassifier:** This model showed promise with better F1 and Recall scores compared to AdaBoost, indicating a more balanced performance in classifying both positive and negative classes.
+
+- **TabNet:** State-of-the-art, attention based neural network, for Tabular datasets. Best used on larger data.
 
 ### Strategies for Enhancement
 1. **Refining Target Value Calculations:** Focus on data from the VIIRS sensor, aiming to include additional sensors and extend the analysis timeframe.
